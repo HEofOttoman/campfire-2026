@@ -2,13 +2,12 @@
 ## Collaborators
 
 ### Role
-Person 1  
-Person 2  
-[Person w/ Link]()  
+[Michael Preston]()
+[Henry Wauzivuff]()  
 
 ## Sourced
 ### Asset Type
-#### Use Case
+#### Brackeys Asset Pack
 Author: [Name]()  
 Source: [Domain : webpage.html]()  
 License: [License]()

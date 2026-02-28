@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bek7o660ukhjr" path="res://assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/knight.png" id="2_2o0in"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2o0in"]
-radius = 8.0
+radius = 11.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t6633"]
 atlas = ExtResource("2_2o0in")
