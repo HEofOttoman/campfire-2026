@@ -1,22 +1,55 @@
 [gd_scene format=3 uid="uid://bw2omm0g7m5j6"]
 
 [ext_resource type="Script" uid="uid://bsqw2ex8ow1r4" path="res://resources/player/player.gd" id="1_2o0in"]
-[ext_resource type="Texture2D" uid="uid://dkarg1dfpkxqn" path="res://icon.svg" id="1_hh55k"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_2o0in"]
+[ext_resource type="Texture2D" uid="uid://bek7o660ukhjr" path="res://assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/knight.png" id="2_2o0in"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2o0in"]
-radius = 56.568542
+radius = 8.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t6633"]
+atlas = ExtResource("2_2o0in")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rdg5v"]
+atlas = ExtResource("2_2o0in")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u8mh4"]
+atlas = ExtResource("2_2o0in")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vtha5"]
+atlas = ExtResource("2_2o0in")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ymov1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t6633")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rdg5v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u8mh4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vtha5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Player" type="CharacterBody2D" unique_id=56250735]
+collision_layer = 3
 script = ExtResource("1_2o0in")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1580367058]
-visible = false
-sprite_frames = SubResource("SpriteFrames_2o0in")
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1230087800]
-texture = ExtResource("1_hh55k")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1565056531]
 shape = SubResource("CircleShape2D_2o0in")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=864614369]
+sprite_frames = SubResource("SpriteFrames_ymov1")
+autoplay = "default"
+frame_progress = 0.5778294

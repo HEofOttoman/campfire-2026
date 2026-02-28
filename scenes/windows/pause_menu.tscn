@@ -1,17 +1,23 @@
 [gd_scene format=3 uid="uid://b4a65oq3plrsu"]
 
-[ext_resource type="PackedScene" path="res://addons/maaacks_game_template/base/nodes/windows/overlaid_window.tscn" id="1_yn032"]
-[ext_resource type="Script" path="res://scenes/windows/pause_menu.gd" id="2_00o4m"]
-[ext_resource type="PackedScene" path="res://scenes/windows/pause_menu_options_window.tscn" id="3_mdvg7"]
-[ext_resource type="PackedScene" path="res://addons/maaacks_game_template/base/nodes/windows/confirmation_overlaid_window.tscn" id="4_6lma4"]
+[ext_resource type="PackedScene" uid="uid://6gdbfi0172ji" path="res://addons/maaacks_game_template/base/nodes/windows/overlaid_window.tscn" id="1_yn032"]
+[ext_resource type="Script" uid="uid://brho47hbbttvd" path="res://scenes/windows/pause_menu.gd" id="2_00o4m"]
+[ext_resource type="PackedScene" uid="uid://35rugq0vywjh" path="res://scenes/windows/pause_menu_options_window.tscn" id="3_mdvg7"]
+[ext_resource type="PackedScene" uid="uid://cwt4p3bufkke5" path="res://addons/maaacks_game_template/base/nodes/windows/confirmation_overlaid_window.tscn" id="4_6lma4"]
 
 [node name="PauseMenu" unique_id=156357199 instance=ExtResource("1_yn032")]
 process_mode = 3
 custom_minimum_size = Vector2(256, 312)
-offset_left = -128.0
-offset_top = -155.0
-offset_right = 128.0
-offset_bottom = 157.0
+anchors_preset = -1
+anchor_left = -0.021701388
+anchor_top = -0.061728396
+anchor_right = 0.022743063
+anchor_bottom = 0.057407413
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 204.80002
+offset_bottom = 308.8
+scale = Vector2(0.2, 0.2)
 size_flags_horizontal = 1
 size_flags_vertical = 1
 script = ExtResource("2_00o4m")
@@ -22,6 +28,7 @@ main_menu_confirmation_node_path = NodePath("MainMenuConfirmation")
 exit_confirmation_node_path = NodePath("ExitConfirmation")
 menu_container_node_path = NodePath("..")
 pauses_game = true
+metadata/_edit_use_anchors_ = true
 
 [node name="TitleLabel" parent="ContentContainer/BoxContainer/TitleMargin/BoxContainer" parent_id_path=PackedInt32Array(1788474031) index="0" unique_id=1049966061]
 text = "Paused"
