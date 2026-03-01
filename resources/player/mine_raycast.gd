@@ -16,8 +16,9 @@ func _physics_process(_delta) -> void:
 		var collider : BreakableTileMap = get_collider()
 		var break_point := get_collision_point()
 		
-		print(collider)
+		#print(collider)
 		if Input.is_action_just_pressed("Mine"):
+		#if Input.is_action_pressed("Mine"):
 			collider.break_tile(break_point)
 			block_break_sfx.play()
 			get_parent().money += 0.5

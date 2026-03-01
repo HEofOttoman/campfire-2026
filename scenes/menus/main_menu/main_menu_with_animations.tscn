@@ -340,7 +340,7 @@ stretch_mode = 0
 modulate = Color(1, 1, 1, 0)
 
 [node name="TitleLabel" parent="MenuContainer/TitleMargin/TitleContainer" index="0" unique_id=359406872]
-text = "Bob's Debt Death"
+text = "Bob's Depth in Debt"
 
 [node name="SubTitleContainer" parent="MenuContainer/SubTitleMargin" parent_id_path=PackedInt32Array(1510335937) index="0" unique_id=930520368]
 modulate = Color(1, 1, 1, 0)
@@ -402,6 +402,20 @@ scale = Vector2(10, 10)
 sprite_frames = ExtResource("7_2k5l7")
 autoplay = "default"
 frame_progress = 0.78151315
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." index="11" unique_id=1592481735]
+layout_mode = 0
+offset_left = 726.0
+offset_top = 201.0
+offset_right = 1089.0
+offset_bottom = 532.0
+text = "This is Bob, an ordinary guy. 
+Many years ago, Bob saw some shady guys. 
+The mafia. 
+After a confrontation that he narrowly escaped, Bob lived in peace. But three years later, the mafia found him and forced him to pay up in a single minute. 
+Or else."
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer/ContinueGameButton" to="." method="_on_continue_game_button_pressed"]
 [connection signal="pressed" from="MenuContainer/MenuButtonsMargin/MenuButtonsContainer/MenuButtonsBoxContainer/LevelSelectButton" to="." method="_on_level_select_button_pressed"]

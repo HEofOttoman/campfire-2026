@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cdi11yd8147un"
+path="res://.godot/imported/Ryuichi Sakamoto - Merry Christmas, Mr. Lawrence.mp3-feb524a857ad81ee7f1fc2f777d15ace.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/Ryuichi Sakamoto - Merry Christmas, Mr. Lawrence.mp3"
+dest_files=["res://.godot/imported/Ryuichi Sakamoto - Merry Christmas, Mr. Lawrence.mp3-feb524a857ad81ee7f1fc2f777d15ace.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

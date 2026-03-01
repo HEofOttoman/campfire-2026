@@ -223,7 +223,7 @@ position = Vector2(0, 640)
 rotation = 6.2831855
 shape = SubResource("WorldBoundaryShape2D_lvr2s")
 
-[node name="BottomBoundary2" type="CollisionShape2D" parent="WorldBoundary" unique_id=60567535]
+[node name="TopBoundary" type="CollisionShape2D" parent="WorldBoundary" unique_id=60567535]
 position = Vector2(0, -164)
 rotation = 9.424778
 shape = SubResource("WorldBoundaryShape2D_lvr2s")
@@ -251,6 +251,15 @@ position = Vector2(364, 441)
 position = Vector2(170, 420)
 
 [node name="Coin6" parent="Coins" unique_id=528802939 instance=ExtResource("5_qy8ot")]
+position = Vector2(225, 484)
+
+[node name="Coin10" parent="Coins" unique_id=580784407 instance=ExtResource("5_qy8ot")]
+position = Vector2(238, 284)
+
+[node name="Coin11" parent="Coins" unique_id=1211952716 instance=ExtResource("5_qy8ot")]
+position = Vector2(-220, 377)
+
+[node name="Coin12" parent="Coins" unique_id=1867246766 instance=ExtResource("5_qy8ot")]
 position = Vector2(225, 484)
 
 [node name="Coin7" parent="Coins" unique_id=402318423 instance=ExtResource("5_qy8ot")]
