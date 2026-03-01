@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bsqw2ex8ow1r4" path="res://resources/player/player.gd" id="1_2o0in"]
 [ext_resource type="Texture2D" uid="uid://bek7o660ukhjr" path="res://assets/brackeys_platformer_assets/brackeys_platformer_assets/sprites/knight.png" id="2_2o0in"]
+[ext_resource type="Script" uid="uid://b8dka76802yhx" path="res://resources/player/hud_manager.gd" id="3_t6633"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2o0in"]
 radius = 11.0
@@ -46,15 +47,29 @@ animations = [{
 collision_layer = 3
 script = ExtResource("1_2o0in")
 
+[node name="MineRaycast" type="RayCast2D" parent="." unique_id=294182092]
+target_position = Vector2(24, 0)
+
+[node name="Pickaxe" type="Line2D" parent="MineRaycast" unique_id=1798271316]
+points = PackedVector2Array(0, 0, 24, 0)
+width = 2.0
+default_color = Color(0.15727392, 0.15727395, 0.15727395, 1)
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1565056531]
 shape = SubResource("CircleShape2D_2o0in")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=864614369]
 sprite_frames = SubResource("SpriteFrames_ymov1")
 autoplay = "default"
-frame_progress = 0.5778294
+frame_progress = 0.52422345
 
-[node name="MineRaycast" type="RayCast2D" parent="." unique_id=294182092]
-target_position = Vector2(16, 0)
+[node name="HUD" type="CanvasLayer" parent="." unique_id=659940103 node_paths=PackedStringArray("money_label")]
+script = ExtResource("3_t6633")
+money_label = NodePath("MoneyLabel")
 
-[node name="HUD" type="CanvasLayer" parent="." unique_id=659940103]
+[node name="MoneyLabel" type="Label" parent="HUD" unique_id=353857089]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 78.0
+offset_bottom = 45.0
+text = "Money: "
