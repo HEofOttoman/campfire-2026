@@ -1,5 +1,7 @@
 extends CharacterBody2D
+class_name Player
 
+@export var money : int = 0
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0

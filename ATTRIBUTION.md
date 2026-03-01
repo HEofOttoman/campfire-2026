@@ -1,8 +1,10 @@
 # Attribution
 ## Collaborators
 
-### Role
+### Custom Spriters
 [Michael Preston]()
+
+### Programming
 [Henry Wauzivuff]()  
 
 ## Sourced

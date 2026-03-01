@@ -53,3 +53,8 @@ shape = SubResource("CircleShape2D_2o0in")
 sprite_frames = SubResource("SpriteFrames_ymov1")
 autoplay = "default"
 frame_progress = 0.5778294
+
+[node name="MineRaycast" type="RayCast2D" parent="." unique_id=294182092]
+target_position = Vector2(16, 0)
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=659940103]
