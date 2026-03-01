@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://bfbwdv1or153v"]
+
+[ext_resource type="Script" uid="uid://b8dka76802yhx" path="res://resources/player/hud_manager.gd" id="1_3ev3o"]
+[ext_resource type="Script" uid="uid://cyh0d64pfygbl" path="res://addons/maaacks_game_template/base/nodes/utilities/pause_menu_controller.gd" id="2_thic1"]
+[ext_resource type="PackedScene" uid="uid://b4a65oq3plrsu" path="res://scenes/windows/pause_menu.tscn" id="3_nuqrj"]
+
+[node name="HUD" type="CanvasLayer" unique_id=1827473859 node_paths=PackedStringArray("money_label", "timer_label")]
+script = ExtResource("1_3ev3o")
+money_label = NodePath("MoneyLabel")
+timer_label = NodePath("StopwatchLabel")
+
+[node name="MoneyLabel" type="Label" parent="." unique_id=824966950]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 78.0
+offset_bottom = 45.0
+text = "Money: "
+
+[node name="StopwatchLabel" type="Label" parent="." unique_id=997854423]
+offset_left = 16.0
+offset_top = 56.0
+offset_right = 78.0
+offset_bottom = 85.0
+text = "00:00"
+
+[node name="TimerLabel" type="Label" parent="." unique_id=995113690]
+offset_left = 1072.0
+offset_top = 45.0
+offset_right = 1134.0
+offset_bottom = 74.0
+rotation = -0.00053186907
+text = "01:00"
+
+[node name="DebtLabel" type="Label" parent="." unique_id=948903241]
+offset_left = 1072.0001
+offset_top = 8.000004
+offset_right = 1134.0001
+offset_bottom = 37.000004
+rotation = -0.00053186907
+text = "$100"
+
+[node name="PauseMenu" type="Node" parent="." unique_id=1026677577]
+script = ExtResource("2_thic1")
+pause_menu_packed = ExtResource("3_nuqrj")
+
+[node name="StopwatchTimer" type="Timer" parent="." unique_id=1277975246]
+autostart = true
+
+[node name="WinTestButton" type="Button" parent="." unique_id=1691233429]
+visible = false
+offset_left = 8.0
+offset_top = 112.0
+offset_right = 99.0
+offset_bottom = 159.0
+text = "Win Test"
+
+[connection signal="timeout" from="StopwatchTimer" to="." method="_on_timer_timeout"]

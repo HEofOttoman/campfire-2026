@@ -2,7 +2,7 @@
 ## Collaborators
 
 ### Custom Spriters
-[Michael (Burnt Toast)]()
+[Michael (Burnt Toast)]() - Bob Designer
 [Sammy (Saprop)]()
 
 ### Programming

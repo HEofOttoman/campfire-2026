@@ -2,6 +2,9 @@ extends CanvasLayer
 
 @export var money_label: Label
 @export var timer_label: Label
+@onready var time_left_label = $TimeLeftLabel
+
+@export var time_limit_timer: Timer
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -28,3 +31,4 @@ func _process(_delta):
 	#update_timer(delta)
 	var money : float = get_parent().money
 	money_label.text = str("Money: $", money) # Replace with function body.
+	time_left_label.text = str("Time Left: ", time_limit_timer.time_left)

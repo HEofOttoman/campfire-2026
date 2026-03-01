@@ -29,3 +29,7 @@ func _on_time_limit_timeout():
 
 func _on_win_test_button_pressed():
 	$WinLoseManager.game_won() # Replace with function body.
+
+
+func _on_lose_test_btn_pressed():
+	$WinLoseManager.game_lost()

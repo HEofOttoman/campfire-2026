@@ -34,7 +34,7 @@ shape = SubResource("CircleShape2D_2o0in")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=864614369]
 sprite_frames = ExtResource("4_lrffc")
 autoplay = "default"
-frame_progress = 0.75441253
+frame_progress = 0.7801733
 
 [node name="HUD" type="CanvasLayer" parent="." unique_id=659940103 node_paths=PackedStringArray("money_label", "timer_label")]
 script = ExtResource("3_t6633")
@@ -55,21 +55,21 @@ offset_right = 78.0
 offset_bottom = 85.0
 text = "00:00"
 
-[node name="TimerLabel" type="Label" parent="HUD" unique_id=2065135645]
-offset_left = 1072.0
-offset_top = 45.0
-offset_right = 1134.0
-offset_bottom = 74.0
+[node name="TimeLeftLabel" type="Label" parent="HUD" unique_id=2065135645]
+offset_left = 912.0
+offset_top = 80.04414
+offset_right = 1034.0
+offset_bottom = 109.04414
 rotation = -0.00053186907
-text = "01:00"
+text = "Time Left: 01:00"
 
 [node name="DebtLabel" type="Label" parent="HUD" unique_id=952521933]
-offset_left = 1072.0001
-offset_top = 8.000004
-offset_right = 1134.0001
-offset_bottom = 37.000004
+offset_left = 952.0
+offset_top = 40.044144
+offset_right = 1035.0
+offset_bottom = 69.04414
 rotation = -0.00053186907
-text = "$100"
+text = "Debt: $100"
 
 [node name="PauseMenu" type="Node" parent="HUD" unique_id=1629864108]
 script = ExtResource("4_u8mh4")
@@ -79,12 +79,18 @@ pause_menu_packed = ExtResource("5_vtha5")
 autostart = true
 
 [node name="WinTestButton" type="Button" parent="HUD" unique_id=76961133]
-visible = false
 offset_left = 8.0
 offset_top = 112.0
 offset_right = 99.0
 offset_bottom = 159.0
 text = "Win Test"
+
+[node name="LoseTestBtn" type="Button" parent="HUD" unique_id=1141182610]
+offset_left = 8.0
+offset_top = 168.0
+offset_right = 105.0
+offset_bottom = 215.0
+text = "Lose Test"
 
 [node name="BlockBreakSFX" type="AudioStreamPlayer2D" parent="." unique_id=1413760312]
 position = Vector2(24, 0)
