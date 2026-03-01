@@ -26,5 +26,5 @@ func _on_timer_timeout():
 
 func _process(_delta):
 	#update_timer(delta)
-	var money : int = get_parent().money
+	var money : float = get_parent().money
 	money_label.text = str("Money: $", money) # Replace with function body.

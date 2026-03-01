@@ -2,11 +2,11 @@
 ## Collaborators
 
 ### Custom Spriters
-[Michael Preston]()
-[Sammy]()
+[Michael (Burnt Toast)]()
+[Sammy (Saprop)]()
 
 ### Programming
-[Henry Walker]()  
+[Shafin (Henry Walker)]()  
 
 ## Sourced
 ### Asset Type
