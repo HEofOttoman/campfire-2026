@@ -15,4 +15,5 @@ func break_tile(_break_position) -> void:
 		#set_cell(tile, 0, Vector2i())
 	print('break tile')
 	var tile = local_to_map(get_global_mouse_position())
+	
 	set_cell(tile, 0, Vector2i())

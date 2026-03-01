@@ -15,6 +15,17 @@ func _process(delta):
 
 func calculate_debt(money):
 	if money > debt:
-		pass
+		print('You got the last bit of debt you need to pay!!')
+		print('Good job!!')
+		$WinLoseManager.game_won()
 	else:
-		pass
+		print('Rip bozo you gon get slimed by the IRS')
+		$WinLoseManager.game_lost()
+
+
+func _on_time_limit_timeout():
+	calculate_debt($Player.money)
+
+
+func _on_win_test_button_pressed():
+	$WinLoseManager.game_won() # Replace with function body.
