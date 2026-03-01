@@ -3,16 +3,17 @@
 
 ### Custom Spriters
 [Michael Preston]()
+[Sammy]()
 
 ### Programming
-[Henry Wauzivuff]()  
+[Henry Walker]()  
 
 ## Sourced
 ### Asset Type
 #### Brackeys Asset Pack
-Author: [Name]()  
-Source: [Domain : webpage.html]()  
-License: [License]()
+Author: [Brackeys](https://brackeysgames.itch.io)  
+Source: [Brackeysgames.itch.io](https://brackeysgames.itch.io/brackeys-platformer-bundle?download)  
+License: [CC0]()
 
 #### Godot Engine Logo
 Author: Andrea Calabró  

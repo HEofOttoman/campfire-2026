@@ -1,14 +1,30 @@
 extends CanvasLayer
 
 @export var money_label: Label
-@onready var player_money : int = get_parent().money
+@export var timer_label: Label
 
 # Called when the node enters the scene tree for the first time.
-func _ready():
-	money_label.text = str("Money: $", player_money) # Replace with function body.
+func _ready() -> void:
+	return
+
+var time_seconds: int = 0
+
+func _on_timer_timeout():
+	time_seconds += 1
+	var minutes = time_seconds / 60
+	var seconds = time_seconds % 60
+	#var miliseconds = time_seconds * 1000
+	#timer_label.text = "%02d:%02d:%02d" % [minutes, seconds]
+	timer_label.text = "%02d:%02d" % [minutes, seconds]
 
 
+#
+#func update_timer(delta) -> void:
+	#var time_elapsed : float = 0
+	#time_elapsed += delta
+	#timer_label.text = str("Time: ", time_elapsed)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func _process(_delta):
+	#update_timer(delta)
+	var money : int = get_parent().money
+	money_label.text = str("Money: $", money) # Replace with function body.
