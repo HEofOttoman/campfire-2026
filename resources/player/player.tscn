@@ -5,8 +5,6 @@
 [ext_resource type="Script" uid="uid://b8dka76802yhx" path="res://resources/player/hud_manager.gd" id="3_t6633"]
 [ext_resource type="Texture2D" uid="uid://dmnk52uk64t6p" path="res://assets/pickaxe.png" id="3_ymov1"]
 [ext_resource type="SpriteFrames" uid="uid://comqxc26xu04p" path="res://resources/player/bob_sprite_frames.tres" id="4_lrffc"]
-[ext_resource type="Script" uid="uid://cyh0d64pfygbl" path="res://addons/maaacks_game_template/base/nodes/utilities/pause_menu_controller.gd" id="4_u8mh4"]
-[ext_resource type="PackedScene" uid="uid://b4a65oq3plrsu" path="res://scenes/windows/pause_menu.tscn" id="5_vtha5"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2o0in"]
 radius = 11.0
@@ -34,7 +32,7 @@ shape = SubResource("CircleShape2D_2o0in")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=864614369]
 sprite_frames = ExtResource("4_lrffc")
 autoplay = "default"
-frame_progress = 0.7801733
+frame_progress = 0.93394387
 
 [node name="HUD" type="CanvasLayer" parent="." unique_id=659940103 node_paths=PackedStringArray("money_label", "timer_label")]
 script = ExtResource("3_t6633")
@@ -70,10 +68,6 @@ offset_right = 1035.0
 offset_bottom = 69.04414
 rotation = -0.00053186907
 text = "Debt: $100"
-
-[node name="PauseMenu" type="Node" parent="HUD" unique_id=1629864108]
-script = ExtResource("4_u8mh4")
-pause_menu_packed = ExtResource("5_vtha5")
 
 [node name="StopwatchTimer" type="Timer" parent="HUD" unique_id=1158139438]
 autostart = true

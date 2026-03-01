@@ -233,21 +233,42 @@ tile_map_data = PackedByteArray("AAD//wIAAwAGAAAAAAAAAAIAAwAGAAAAAAABAAIAAwAGAAA
 tile_set = SubResource("TileSet_qy8ot")
 script = ExtResource("6_klk83")
 
-[node name="Coin" parent="." unique_id=1222976584 instance=ExtResource("5_qy8ot")]
+[node name="Coins" type="Node" parent="." unique_id=1752593404]
+
+[node name="Coin" parent="Coins" unique_id=1222976584 instance=ExtResource("5_qy8ot")]
 position = Vector2(108, -24)
 
-[node name="Coin2" parent="." unique_id=98590512 instance=ExtResource("5_qy8ot")]
+[node name="Coin2" parent="Coins" unique_id=98590512 instance=ExtResource("5_qy8ot")]
 position = Vector2(-86, -45)
 
-[node name="Coin3" parent="." unique_id=922239838 instance=ExtResource("5_qy8ot")]
+[node name="Coin3" parent="Coins" unique_id=922239838 instance=ExtResource("5_qy8ot")]
 position = Vector2(-31, 19)
 
-[node name="WinLoseManager" type="Node" parent="." unique_id=1941061026]
+[node name="Coin4" parent="Coins" unique_id=945360887 instance=ExtResource("5_qy8ot")]
+position = Vector2(364, 441)
+
+[node name="Coin5" parent="Coins" unique_id=168580493 instance=ExtResource("5_qy8ot")]
+position = Vector2(170, 420)
+
+[node name="Coin6" parent="Coins" unique_id=528802939 instance=ExtResource("5_qy8ot")]
+position = Vector2(225, 484)
+
+[node name="Coin7" parent="Coins" unique_id=402318423 instance=ExtResource("5_qy8ot")]
+position = Vector2(157, 570)
+
+[node name="Coin8" parent="Coins" unique_id=1647237232 instance=ExtResource("5_qy8ot")]
+position = Vector2(-45, 514)
+
+[node name="Coin9" parent="Coins" unique_id=114342705 instance=ExtResource("5_qy8ot")]
+position = Vector2(10, 578)
+
+[node name="WinLoseManager" type="Node" parent="." unique_id=1941061026 node_paths=PackedStringArray("hud_manager")]
 script = ExtResource("7_diftj")
 main_menu_scene_path = "uid://bx7u6c655vijl"
 ending_scene_path = "uid://btqcf0khksdr5"
 game_won_scene = ExtResource("8_lvr2s")
 game_lost_scene = ExtResource("10_jnt7p")
+hud_manager = NodePath("../Player/HUD")
 
 [node name="TimeLimit(orStopwatch)" type="Timer" parent="." unique_id=88591397]
 wait_time = 60.0

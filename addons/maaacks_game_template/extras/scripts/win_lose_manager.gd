@@ -11,6 +11,9 @@ extends Node
 ## Optional screen to be shown after the game is lost.
 @export var game_lost_scene : PackedScene
 
+## HUD Manager ad hoc fix for oversized canvas
+@export var hud_manager : CanvasLayer
+
 var has_lost_game : bool = false
 var has_won_game : bool = false
 
@@ -40,7 +43,8 @@ func _load_ending() -> void:
 func _load_lose_screen_or_reload() -> void:
 	if game_lost_scene:
 		var instance = game_lost_scene.instantiate()
-		get_tree().current_scene.add_child(instance)
+		#get_tree().current_scene.add_child(instance)
+		hud_manager.add_child(instance)
 		_try_connecting_signal_to_node(instance, &"restart_pressed", _reload_level)
 		_try_connecting_signal_to_node(instance, &"main_menu_pressed", _load_main_menu)
 	else:
@@ -52,7 +56,8 @@ func _reload_level() -> void:
 func _load_win_screen_or_ending() -> void:
 	if game_won_scene:
 		var instance = game_won_scene.instantiate()
-		get_tree().current_scene.add_child(instance)
+		#get_tree().current_scene.add_child(instance)
+		hud_manager.add_child(instance)
 		_try_connecting_signal_to_node(instance, &"continue_pressed", _load_ending)
 		_try_connecting_signal_to_node(instance, &"restart_pressed", _reload_level)
 		_try_connecting_signal_to_node(instance, &"main_menu_pressed", _load_main_menu)

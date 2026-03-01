@@ -31,4 +31,4 @@ func _process(_delta):
 	#update_timer(delta)
 	var money : float = get_parent().money
 	money_label.text = str("Money: $", money) # Replace with function body.
-	time_left_label.text = str("Time Left: ", time_limit_timer.time_left)
+	time_left_label.text = str("Time Left: ", ceil(time_limit_timer.time_left))
