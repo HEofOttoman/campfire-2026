@@ -406,7 +406,7 @@ sprite_frames = ExtResource("7_2k5l7")
 autoplay = "default"
 frame_progress = 0.78151315
 
-[node name="RichTextLabel" type="RichTextLabel" parent="." index="11" unique_id=1592481735]
+[node name="LoreLabel" type="RichTextLabel" parent="." index="11" unique_id=1592481735]
 layout_mode = 0
 offset_left = 726.0
 offset_top = 201.0
